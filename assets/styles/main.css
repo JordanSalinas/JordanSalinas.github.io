@@ -1,0 +1,79 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+section h2 {
+  align-self: center;
+}
+
+header {
+  padding: 20px;
+  color: black;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
+.my-image {
+  height: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 34px;
+}
+
+.header-text h2 {
+  margin-bottom: 4px;
+}
+
+.header-text p {
+  margin-top: 4px;
+  width: 500px;
+}
+
+.linkedin-logo {
+  height: 16px;
+  width: 16px;
+  margin-left: 4px;
+}
+
+.company-logos {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company-logo {
+  max-height: 100px;
+  margin-left: 16px;
+  margin-right: 16px;
+  max-width: 200px;
+}
+
+.page-width {
+  max-width: 1000px;
+}
+
+.section-title {
+  margin-top: 8px;
+}
+
