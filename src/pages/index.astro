@@ -1,0 +1,101 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Experience from "../components/Experience.astro";
+import Header from "../components/Header.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		.experience-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			max-width: 1250px;
+		}
+
+		.header-text {
+			display: flex;
+			flex-direction: column;
+			margin-left: 34px;
+		}
+
+		.header-text h2 {
+			margin-bottom: 4px;
+		}
+
+		.header-text p {
+			margin-top: 4px;
+			width: 500px;
+		}	
+
+		.section-title {
+			margin-top: 8px;
+		}
+	</style>
+	<head>
+		<BaseHead />
+	</head>
+
+	<body>
+		<Header />
+
+		<section class="page-style">
+			<div class="page-width header-section">
+				<img class="my-image" src="/me.jpg"/>
+				<div class="header-text">
+					<h1>Hey 👋, I'm Jordan!</h1>
+					<p>I've been a software developer now for about 9 years. I've worked on applications for web and mobile platforms using tech like React, React Native, Typescript, Node, Python, Mobx, CSS, and HTML to name a few.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-style">
+			<h2 class="section-title">Companies I've worked with</h2>
+			<div class="experience-container">
+				<Experience src="/gozova-logo.png" dates="Oct 2022 - Dec 2022" description="Gozova is a moving company which provides a platform for movers and customers to connect. While there I worked to develop mobile and web applications written in React and React-native. I used typescript on the backend to write our RESTful api which used HapiJS for the server, JOI for payload/param validation, MongoDB, and Postgres. I also helped to move our website over to Wordpress and worked on implementing GA4 (Google analytics) into our apps while there. " />
+
+				<Experience src="/trivie-logo.png" dates="Sep 2020 - Aug 2022" description="Trivie is a learning software company. They develop apps which help companies educate their employees, clients, and users on relevant topics. During my time there I developed 3 greenfield projects all in React as well as a mobile app in React Native. I worked to develop requirements, implement new features/designs, mentor devs, implement CICD, deploy code, and ensure code was high quality and tech debt was low. I researched and vetted open source libraries where they were needed for our apps, and developed new architecture/components to help us flesh out our web and mobile designs." />
+
+				<Experience src="/dairy-com-logo.jpg" dates="Jan 2018 - Sep 2020" description="Dairy.com provides software to manage the logistics of dairy products. During my time there I designed and implemented applications in proprietary and open-source frameworks including React and Angular. I worked on a mobile app written in Ionic and Angular. I also handled code deployments and delivered a handful of applications from developing requirements to deploying in production. I wrote components, and helped guide both legacy and new projects." />
+
+				<Experience src="/jp-morgan-chase-logo.png" dates="May 2017 - Nov 2017" description="I worked as a contractor for JPMorgan Chase for 6 months. In that time I wrote interfaces which modeled data, functions, and content required for the chase application. I also worked on tools which helped to write and verify BlueSpec interfaces efficiently and accurately." />
+
+				<Experience src="/misys-logo.png" dates="Jun 2015 - Mar 2017" description="Misys is a company that does loan origination software. During my time there I worked as a fullstack developer working with Java and Javascript. I worked to write new features, flesh out requirements, and fix bugs." />
+
+				<Experience src="/apex-logo.webp" dates="May 2014 - Mar 2015" description="Apex is a company which does freight factoring. They buy freight invoices from truckers at a discounted rate so that independent truckers can get paid more quickly and don’t have to deal with collecting payment. This was my first web development job and in that time I learned a ton about development as well as all the technologies involved. I worked with Java, SQL, and did some frontend work using JQuery." />
+			</div>
+		</section>
+
+		<section class="page-style">
+			<h2 class="section-title">Some of my favorite technologies</h2>
+			<div class="logos">
+				<div class="tech-logo">
+					<img class="logo" src="/react-logo.png"/>
+					<h4>React</h4>
+				</div>
+				<div class="tech-logo">
+					<img class="logo" src="/ts-logo.svg"/>
+					<h4>Typescript</h4>
+				</div>
+				<div class="tech-logo">
+					<img class="logo" src="/yarn-logo.webp"/>
+					<h4>Yarn</h4>
+				</div>
+				<div class="tech-logo">
+					<img class="logo" src="/webpack-logo.png"/>
+					<h4>Webpack</h4>
+				</div>
+				<div class="tech-logo">
+					<img class="logo" src="/css3-logo.png"/>
+					<h4>CSS3</h4>
+				</div>
+				<div class="tech-logo">
+					<img class="logo" src="/mobx-logo.png"/>
+					<h4>Mobx</h4>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+---
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+	<h4>
+		Jordan Salinas
+	</h4>
+	<HeaderLink href="https://www.linkedin.com/in/jordan-salinas-9a0116113">
+		<img class="linkedin-logo" src="/linkedin-logo.png"/>
+		LinkedIn
+	</HeaderLink>
+</header>
+<style>
+	header {
+		display: flex;
+		justify-content: space-between;
+		color: var(--primary5);
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
+		padding: 16px 32px;
+		position: sticky;
+		top: 0;
+		background: white;
+	}
+
+	h2 {
+		margin: 0;
+	}
+</style>

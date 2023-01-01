@@ -1,0 +1,42 @@
+---
+type Props = {
+  src: string;
+  description: string;
+  dates: string;
+}
+
+const { src, description, dates } = Astro.props
+---
+
+<div class="container">
+  <div class="floater">
+    <img src={src} />
+    <p>{dates}</p>
+  </div>
+  <p>{description}</p>
+</div>
+<style>
+  img {
+    max-height: 80px;
+    max-width: 130px;
+  }
+
+  .floater {
+    float: left;
+    color: var(--primary4);
+  }
+
+  .floater p {
+    margin-top: 4px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin: 0;
+    width: 350px;
+  }
+
+  .container {
+    margin: 16px;
+  }
+</style>
