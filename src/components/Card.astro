@@ -1,0 +1,46 @@
+---
+---
+
+<div class="container">
+  <div class="slot-content">
+    <slot />
+  </div>
+  <div class="background"></div>
+</div>
+
+<style>
+  .container {
+    position: relative;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: box-shadow .5s, color .5s;
+    overflow: hidden;
+  }
+
+  .container:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  .background {
+    background: var(--gradient1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+
+  .container:hover .background {
+    opacity: 1;
+  }
+
+  .slot-content {
+    position: relative;
+    z-index: 1;
+    padding: 16px;
+  }
+</style>

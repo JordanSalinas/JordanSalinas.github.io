@@ -1,30 +1,36 @@
 ---
-import HeaderLink from './HeaderLink.astro';
+import ButtonLink from './ButtonLink.astro';
 ---
 
 <header>
-	<h4>
-		Jordan Salinas
+	<h4 class="display-4">
+		JORDAN SALINAS
 	</h4>
-	<HeaderLink href="https://www.linkedin.com/in/jordan-salinas-9a0116113">
+
+	<ButtonLink href="https://www.linkedin.com/in/jordan-salinas-9a0116113">
 		<img class="linkedin-logo" src="/linkedin-logo.png"/>
-		LinkedIn
-	</HeaderLink>
+	</ButtonLink>
 </header>
 <style>
 	header {
+		box-sizing: border-box;
+		width: 100%;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: row;
 		color: var(--primary5);
-		border-bottom-left-radius: 16px;
-		border-bottom-right-radius: 16px;
-		padding: 16px 32px;
+		padding: 16px;
 		position: sticky;
 		top: 0;
 		background: white;
+		justify-content: space-between;
 	}
 
-	h2 {
-		margin: 0;
+	img {
+		height: 20px;
+	}
+
+	.linkedin-logo {
+		height: 16px;
+		width: 16px;
 	}
 </style>
